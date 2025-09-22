@@ -13,7 +13,8 @@ A production-grade, **hybrid** video recommendation backend for the assignment. 
 ## Deployed Link
 
 ```bash
-https://video-recommendation-assignment.onrender.com/docs#/```
+https://video-recommendation-assignment.onrender.com/docs#/
+```
 
 ## Quickstart
 
