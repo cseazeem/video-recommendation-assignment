@@ -1,0 +1,89 @@
+{
+  "info": {
+    "name": "VideoRecommendation",
+    "_postman_id": "f5a3c9d5-7d86-4b9e-943a-1234567890ab",
+    "description": "Assignment API tests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Personalized Feed",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Flic-Token",
+            "value": "{{FLIC_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8000/feed?username={{username}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "feed"
+          ],
+          "query": [
+            {
+              "key": "username",
+              "value": "{{username}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Category Feed",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Flic-Token",
+            "value": "{{FLIC_TOKEN}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8000/feed?username={{username}}&project_code={{project_code}}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "feed"
+          ],
+          "query": [
+            {
+              "key": "username",
+              "value": "{{username}}"
+            },
+            {
+              "key": "project_code",
+              "value": "{{project_code}}"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "key": "username",
+      "value": "alice"
+    },
+    {
+      "key": "project_code",
+      "value": "flic"
+    },
+    {
+      "key": "FLIC_TOKEN",
+      "value": "replace_me"
+    }
+  ]
+}
