@@ -10,6 +10,11 @@ A production-grade, **hybrid** video recommendation backend for the assignment. 
 
 > Ref apps: Empowerverse (Android/iOS).
 
+## Deployed Link
+
+```bash
+https://video-recommendation-assignment.onrender.com/docs#/```
+
 ## Quickstart
 
 ```bash
